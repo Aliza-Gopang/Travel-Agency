@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" style="width: 150px; height: 55px;" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Destination</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Our Agents</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading ">Welcome To Our Travel Agency</div>
+                <div class="masthead-heading text-uppercase">It's Nice To See You</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Services</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">Since 2009, we've been here to fuel your adventures anytime</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa-brands fa-cc-visa fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Visa Services</h4>
+                        <p class="text-muted">Effortless visa assistance for travel—fast, reliable, and stress-free. From applications to renewals and extensions, we handle everything seamlessly.</p>
+                        <button class="btn btn-primary" onclick="openPopup('visaPopup')">Learn More</button>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa-solid fa-utensils fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Hotel Booking</h4>
+                        <p class="text-muted">Book your perfect stay with our hassle-free hotel booking services a luxurious five-star experience,we make the process seamless and stress-free</p>
+                        <button class="btn btn-primary" onclick="openPopup('hotelPopup')">Learn More</button>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa-solid fa-hand-holding-heart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Tour Packages</h4>
+                        <p class="text-muted">Effortless visa assistance for travel, seamless hotel bookings, and tailored tour packages—making your journey smooth and unforgettable.</p>
+                        <button class="btn btn-primary" onclick="openPopup('tourPopup')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    
+        <div id="visaPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Visa Services</h2>
+                <p>We offer a wide range of visa services to help you with your travel needs. Our expert team ensures a smooth and efficient process, whether you're traveling for business, leisure, or study.</p>
+                <ul>
+                    <li>Visa Applications for multiple countries</li>
+                    <li>Visa Renewals & Extensions</li>
+                    <li>Business & Work Visas</li>
+                    <li>Student Visas</li>
+                    <li>Tourist Visas</li>
+                    <li>Emergency Visa Services</li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-danger" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="hotelPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Hotel Booking</h2>
+                <p>Find and book the best hotels at great prices. Whether you’re looking for budget-friendly options or luxury stays, we ensure a comfortable and convenient booking experience.</p>
+                <ul>
+                    <li>Budget and luxury hotel bookings</li>
+                    <li>Special discounts and deals</li>
+                    <li>24/7 customer support</li>
+                    <li>Easy online reservations</li>
+                    <li>Personalized recommendations</li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-danger" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+        
+       
+    
+        <div id="tourPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Tour Packages</h2>
+                <p>Explore our exciting tour packages for your next adventure. We offer customized travel experiences for all types of travelers.</p>
+                <ul>
+                    <li>Adventure and nature tours</li>
+                    <li>Luxury and budget travel packages</li>
+                    <li>Guided sightseeing tours</li>
+                    <li>Customized itineraries</li>
+                    <li>Honeymoon and family vacation packages</li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-danger" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Portfolio Grid -->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase text-dark">Destination</h2>
+            <h3 class="section-subheading text-muted">Special packages for top destinations.</h3>
+        </div>
+        <div class="row">
+          <!-- Destination 1 - UAE -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href="#uaePackageModal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" style="height: 266px; width: 370px;" src="assets/img/portfolio/1.jpg" alt="Canada" />
+                </a>
+                <div class="portfolio-caption uae-box">
+                    <div class="portfolio-caption-heading">(United Arab Emirates (UAE))</div>
+                    <div class="portfolio-caption-subheading text-muted">Burj Khalifa - 7 Days</div>
+                    <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#uaePackageModal">View Package</button>
+                </div>
+            </div>
+        </div>
+
+<!-- UAE Package Modal -->
+<div class="modal fade" id="uaePackageModal" tabindex="-1" aria-labelledby="uaePackageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: #333;">
+            <div class="modal-header" style="background-color: #f8f9fa; color: #0056b3;">
+                <h5 class="modal-title">Dubai Luxury Tour - 7 Days</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="color: #444;">
+                <p><strong style="color: #d9534f;">Includes:</strong> Flights, 5-Star Hotel, Desert Safari, Burj Khalifa, City Tours.</p>
+                <p><strong style="color: #5cb85c;">Price:</strong> $1499 per person</p>
+                <!-- "Book Now" button opens Booking Form Modal -->
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bookingFormModal">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Booking Form Modal -->
+<div class="modal fade" id="bookingFormModal" tabindex="-1" aria-labelledby="bookingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: black;">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Your Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="travelDate" class="form-label">Preferred Travel Date</label>
+                        <input type="date" class="form-control" id="travelDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ticketType" class="form-label">Ticket Type</label>
+                        <select class="form-control" id="ticketType" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numTickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="numTickets" min="1" max="10" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                    ✅ Booking Successful! Your Ticket ID: <strong id="ticketID"></strong>. We will contact you soon.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Destination 2 - USA -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#usaPackageModal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" style="height: 266px; width: 370px;" src="assets/img/portfolio/2.jpg" alt="Canada" />
+                    </a>
+                    <div class="portfolio-caption usa-box">
+                        <div class="portfolio-caption-heading">United States of America (USA)</div>
+                        <div class="portfolio-caption-subheading text-muted">London - 10 Days</div>
+                        <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#usaPackageModal">View Package</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+<!-- USA Package Modal -->
+<div class="modal fade" id="usaPackageModal" tabindex="-1" aria-labelledby="usaPackageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: #333;"> <!-- Dark Gray Text -->
+            <div class="modal-header" style="background-color: #f8f9fa; color: #0056b3;">
+                <h5 class="modal-title">New York & LA - 10 Days</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="color: #444;">
+                <p><strong style="color: #d9534f;">Includes:</strong> Flights, 4-Star Hotels, Hollywood Tour, Statue of Liberty, Times Square.</p>
+                <p><strong style="color: #5cb85c;">Price:</strong> $1999 per person</p>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#usaBookingFormModal">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- USA Booking Form Modal -->
+<div class="modal fade" id="usaBookingFormModal" tabindex="-1" aria-labelledby="usaBookingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: black;">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Your USA Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="usaBookingForm">
+                    <div class="mb-3">
+                        <label for="usaFullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="usaFullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="usaEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="usaEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="usaPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="usaPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="usaTravelDate" class="form-label">Preferred Travel Date</label>
+                        <input type="date" class="form-control" id="usaTravelDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="usaTicketType" class="form-label">Ticket Type</label>
+                        <select class="form-control" id="usaTicketType" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="usaNumTickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="usaNumTickets" min="1" max="10" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div id="usaSuccessMessage" class="alert alert-success mt-3" style="display: none;">
+                    ✅ Booking Successful! Your Ticket ID: <strong id="usaTicketID"></strong>. We will contact you soon.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Destination 3 - Canada -->
+<div class="col-lg-4 col-sm-6 mb-4">
+    <div class="portfolio-item">
+        <a class="portfolio-link" data-bs-toggle="modal" href="#canadaPackageModal">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 266px; width: 370px;" src="assets/img/portfolio/3.jpg" alt="Canada" />
+        </a>
+        <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Canada</div>
+            <div class="portfolio-caption-subheading text-muted">Toronto & Vancouver - 8 Days</div>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#canadaPackageModal">View Package</button>
+        </div>
+    </div>
+</div>
+
+<!-- Canada Package Modal -->
+<div class="modal fade" id="canadaPackageModal" tabindex="-1" aria-labelledby="canadaPackageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: #333;">
+            <div class="modal-header" style="background-color: #f8f9fa; color: #0056b3;">
+                <h5 class="modal-title">Toronto & Vancouver - 8 Days</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="color: #444;">
+                <p><strong style="color: #d9534f;">Includes:</strong> Flights, 4-Star Hotels, Niagara Falls, CN Tower, City Tours.</p>
+                <p><strong style="color: #5cb85c;">Price:</strong> $1799 per person</p>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#canadaBookingFormModal">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+<!-- Canada Booking Form Modal -->
+<div class="modal fade" id="canadaBookingFormModal" tabindex="-1" aria-labelledby="canadaBookingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: black;">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Your Canada Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="canadaBookingForm">
+                    <div class="mb-3">
+                        <label for="canadaFullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="canadaFullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="canadaEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="canadaEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="canadaPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="canadaPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="canadaTravelDate" class="form-label">Preferred Travel Date</label>
+                        <input type="date" class="form-control" id="canadaTravelDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="canadaTicketType" class="form-label">Ticket Type</label>
+                        <select class="form-control" id="canadaTicketType" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="canadaNumTickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="canadaNumTickets" min="1" max="10" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div id="canadaSuccessMessage" class="alert alert-success mt-3" style="display: none;">
+                    ✅ Booking Successful! Your Ticket ID: <strong id="canadaTicketID"></strong>. We will contact you soon.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+           <!-- Destination 4 - Switzerland -->
+<div class="col-lg-4 col-sm-6 mb-4">
+    <div class="portfolio-item">
+        <a class="portfolio-link" data-bs-toggle="modal" href="#switzerlandPackageModal">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 267px;" src="assets/img/portfolio/4.jpg" alt="Switzerland" />
+        </a>
+        <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Switzerland</div>
+            <div class="portfolio-caption-subheading text-muted">Alps & Zurich - 6 Days</div>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#switzerlandPackageModal">View Package</button>
+        </div>
+    </div>
+</div>
+
+<!-- Switzerland Package Modal -->
+<div class="modal fade" id="switzerlandPackageModal" tabindex="-1" aria-labelledby="switzerlandPackageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: #333;">
+            <div class="modal-header" style="background-color: #f8f9fa; color: #0056b3;">
+                <h5 class="modal-title">Alps & Zurich - 6 Days</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="color: #444;">
+                <p><strong style="color: #d9534f;">Includes:</strong> Flights, 4-Star Hotels, Alps Tour, Lake Zurich Cruise.</p>
+                <p><strong style="color: #5cb85c;">Price:</strong> $2199 per person</p>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#switzerlandBookingFormModal">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Switzerland Booking Form Modal -->
+<div class="modal fade" id="switzerlandBookingFormModal" tabindex="-1" aria-labelledby="switzerlandBookingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: black;">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Your Switzerland Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="switzerlandBookingForm">
+                    <div class="mb-3">
+                        <label for="switzerlandFullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="switzerlandFullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="switzerlandEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="switzerlandEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="switzerlandPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="switzerlandPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="switzerlandTravelDate" class="form-label">Preferred Travel Date</label>
+                        <input type="date" class="form-control" id="switzerlandTravelDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="switzerlandTicketType" class="form-label">Ticket Type</label>
+                        <select class="form-control" id="switzerlandTicketType" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="switzerlandNumTickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="switzerlandNumTickets" min="1" max="10" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div id="switzerlandSuccessMessage" class="alert alert-success mt-3" style="display: none;">
+                    ✅ Booking Successful! Your Ticket ID: <strong id="switzerlandTicketID"></strong>. We will contact you soon.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Destination 5 - Italy -->
+<div class="col-lg-4 col-sm-6 mb-4">
+    <div class="portfolio-item">
+        <a class="portfolio-link" data-bs-toggle="modal" href="#italyPackageModal">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 267px; width: 370px;" src="assets/img/portfolio/5.jpg" alt="Italy" />
+        </a>
+        <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Italy</div>
+            <div class="portfolio-caption-subheading text-muted">Rome & Venice - 9 Days</div>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#italyPackageModal">View Package</button>
+        </div>
+    </div>
+</div>
+
+<!-- Italy Package Modal -->
+<div class="modal fade" id="italyPackageModal" tabindex="-1" aria-labelledby="italyPackageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: #333;">
+            <div class="modal-header" style="background-color: #f8f9fa; color: #0056b3;">
+                <h5 class="modal-title">Rome & Venice - 9 Days</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="color: #444;">
+                <p><strong style="color: #d9534f;">Includes:</strong> Flights, 4-Star Hotels, Gondola Ride, City Tours.</p>
+                <p><strong style="color: #5cb85c;">Price:</strong> $2199 per person</p>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#italyBookingFormModal">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Italy Booking Form Modal -->
+<div class="modal fade" id="italyBookingFormModal" tabindex="-1" aria-labelledby="italyBookingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: black;">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Your Italy Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="italyBookingForm">
+                    <div class="mb-3">
+                        <label for="italyFullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="italyFullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="italyEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="italyEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="italyPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="italyPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="italyTravelDate" class="form-label">Preferred Travel Date</label>
+                        <input type="date" class="form-control" id="italyTravelDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="italyTicketType" class="form-label">Ticket Type</label>
+                        <select class="form-control" id="italyTicketType" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="italyNumTickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="italyNumTickets" min="1" max="10" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div id="italySuccessMessage" class="alert alert-success mt-3" style="display: none;">
+                    ✅ Booking Successful! Your Ticket ID: <strong id="italyTicketID"></strong>. We will contact you soon.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Destination 6 - Malaysia -->
+<div class="col-lg-4 col-sm-6">
+    <div class="portfolio-item">
+        <a class="portfolio-link" data-bs-toggle="modal" href="#malaysiaPackageModal">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" style="height: 267px; width: 370px;" src="assets/img/portfolio/6.jpg" alt="Malaysia" />
+        </a>
+        <div class="portfolio-caption">
+            <div class="portfolio-caption-heading">Malaysia</div>
+            <div class="portfolio-caption-subheading text-muted">Kuala Lumpur & Langkawi - 5 Days</div>
+            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#malaysiaPackageModal">View Package</button>
+        </div>
+    </div>
+</div>
+
+<!-- Malaysia Package Modal -->
+<div class="modal fade" id="malaysiaPackageModal" tabindex="-1" aria-labelledby="malaysiaPackageLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: #333;">
+            <div class="modal-header" style="background-color: #f8f9fa; color: #0056b3;">
+                <h5 class="modal-title">Kuala Lumpur & Langkawi - 5 Days</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" style="color: #444;">
+                <p><strong style="color: #d9534f;">Includes:</strong> Flights, 4-Star Hotels, Island Tours, City Tours.</p>
+                <p><strong style="color: #5cb85c;">Price:</strong> $1599 per person</p>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#malaysiaBookingFormModal">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Malaysia Booking Form Modal -->
+<div class="modal fade" id="malaysiaBookingFormModal" tabindex="-1" aria-labelledby="malaysiaBookingFormLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="color: black;">
+            <div class="modal-header">
+                <h5 class="modal-title">Book Your Malaysia Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="malaysiaBookingForm">
+                    <div class="mb-3">
+                        <label for="malaysiaFullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="malaysiaFullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="malaysiaEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="malaysiaEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="malaysiaPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="malaysiaPhone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="malaysiaTravelDate" class="form-label">Preferred Travel Date</label>
+                        <input type="date" class="form-control" id="malaysiaTravelDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="malaysiaTicketType" class="form-label">Ticket Type</label>
+                        <select class="form-control" id="malaysiaTicketType" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                            <option value="First Class">First Class</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="malaysiaNumTickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="malaysiaNumTickets" min="1" max="10" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Booking</button>
+                </form>
+
+                <!-- Success Message (Initially Hidden) -->
+                <div id="malaysiaSuccessMessage" class="alert alert-success mt-3" style="display: none;">
+                    ✅ Booking Successful! Your Ticket ID: <strong id="malaysiaTicketID"></strong>. We will contact you soon.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Welcome to Our Travel Agency</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2025</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Founded in 2009, Our Travel Agency started with a passion for making travel unforgettable. From a small team to a trusted travel partner, we’ve always focused on personalized service and creating lasting memories for our clients.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">Face many challenges</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The journey wasn’t easy we faced challenges along the way, but our passion for travel. each step helped shape the agency into what it is today, with a commitment to making every trip unforgettable.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2015</h4>
+                                <h4 class="subheading">Developing our agency</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Envolving from a small team into a trusted travel provider. With a focus on customer satisfaction and personalized experiences, Our commitment to excellence drives us to offer the best journeys, every time.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>January 2025</h4>
+                                <h4 class="subheading">Moving Ahead</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">As we step into 2025, our travel agency continues to innovate and expand, offering even more personalized, seamless travel experiences. With a dedicated team and a passion for exploration, we’re excited to shape the future of travel for our clients.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Join Us
+                                <br />
+                                In Our
+                                <br />
+                                Journey!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-dark">Our Agents</h2>
+                    <h3 class="section-subheading text-muted">Our specialists are committed to crafting tailored travel experiences</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4 style="color: #333;">Aliza Mushtaque</h4>
+                            <p class="text-muted">Destination Master</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4 style="color: #333;">Mohsin Alee</h4>
+                            <p class="text-muted">GlobeTrotter Advisor</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4 style="color: #333;">Izzah Khan</h4>
+                            <p class="text-muted">Wanderlust Expert</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Our travel agent are dedicated to providing personalized travel experiences, ensuring every journey is seamless and unforgettable.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">For Emergency</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            
+                            <br />
+                           <p>we will contact you soon </p>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2025 <br /> designed by Aliza Mushtaque</div>
+                   
+                   
+
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3 text-light"  href="!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none text-light" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
